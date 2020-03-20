@@ -11,23 +11,22 @@ Projeto relativo ao processo seletivo para posição em desenvolvimento de softw
 **1. Requerimentos**:
 
 - JDK 8
-- Maven
 - PostgreSQL (username=postgres, password=1234, acessível pela porta 5432)
 
 **2. Gerar JAR**
 
 Vá ao root folder - onde o pom.xml está - e execute o comando:
 
-`mvn package -Dmaven.test.skip=true`
+`./mvnw package -Dmaven.test.skip=true`
 
 Um novo arquivo `exercicio-0.0.1-SNAPSHOT.jar` deverá ter sido criado em `exercicio/target`.
 
 
 **3. Rodando a aplicação**
 
-Vá à pasta `exercicio/target` e execute:
+Execute:
 
-`java -jar exercicio-0.0.1-SNAPSHOT.jar`
+`./mvnw spring-boot:run`
 
 
 A aplicação será criada e ficará acessível pela `url` `localhost:8080`.
